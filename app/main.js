@@ -6,6 +6,7 @@
 
 //ES6 模块加载器语法
 import './main.css';
+import "./main.less";
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Hello from './component.jsx';
