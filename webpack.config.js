@@ -10,6 +10,8 @@ module.exports = {
 //  
     
     entry: [
+      'webpack/hot/dev-server',
+      'webpack-dev-server/client?http://172.30.5.47:8088/',
       path.resolve(__dirname, 'app/main.js')
     ],
     output: {
