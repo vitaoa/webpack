@@ -44,26 +44,29 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
-	var component = __webpack_require__(1);
+	module.exports = __webpack_require__(1);
 
-
-	document.body.appendChild(component());
 
 /***/ },
 /* 1 */
 /***/ function(module, exports) {
 
 	'use strict';
+	//var component = require('./component.js');
+	//
+	//
+	//document.body.appendChild(component());
 
+	//ES6 模块加载器语法
 
-	module.exports = function () {
-	    var element = document.createElement('h1');
+	import React from 'react';
+	import Hello from './component.jsx';
 
-	    element.innerHTML = 'Hello world';
+	main();
 
-	    return element;
-	};
+	function main() {
+	    React.render(React.createElement(Hello), document.getElementById('app'));
+	}
 
 /***/ }
 /******/ ]);

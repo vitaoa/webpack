@@ -1,5 +1,16 @@
-'use strict';
-var component = require('./component.js');
+//'use strict';
+//var component = require('./component.js');
+//
+//
+//document.body.appendChild(component());
 
+//ES6 模块加载器语法
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Hello from './component.jsx';
 
-document.body.appendChild(component());
+main();
+
+function main() {
+    ReactDOM.render(<Hello />, document.getElementById('app'));
+}
